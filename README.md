@@ -25,7 +25,7 @@ Users would be able to:
 - Toggle the color scheme between light and dark mode 
 
 ### Link
-- Visit Site: [rest-countries-api-gray-nine.vercel.app/](https://rest-countries-api-gray-nine.vercel.app/)
+- Visit Site: [REST Countries Api](https://rest-countries-api-gray-nine.vercel.app/)
 
 ## My process
 
@@ -37,6 +37,7 @@ Users would be able to:
 - [Bootstrap](https://getbootstrap.com/) - CSS framework
 - [React](https://reactjs.org/) - JS library
 - [Redux](https://redux.js.org/) - State Management Package
+- [REST Countries](https://restcountries.eu/) 
 
 ## Author
 
