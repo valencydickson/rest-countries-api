@@ -1,0 +1,150 @@
+:root {
+  /* Dark Mode Elements */
+  --DarkBlue: hsl(209, 23%, 22%);
+  /* Dark Mode Background */
+  --VeryDarkBlueBg: hsl(207, 26%, 17%);
+  /* (Light Mode Text) */
+  --VeryDarkBlue: hsl(200, 15%, 8%);
+  /* (Light Mode Input) */
+  --DarkGray: hsl(0, 0%, 52%);
+  /* (Light Mode Background) */
+  --VeryLightGray: hsl(0, 0%, 98%);
+  /* (Dark Mode Text & Light Mode Elements) */
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.darkContainer {
+  background-color: var(--VeryDarkBlueBg);
+  padding-bottom: 1em;
+}
+
+/* HEADER */
+
+.darkNavbar {
+  background-color: var(--VeryDarkBlueBg);
+}
+
+.navbar h4 a {
+  font-weight: 600;
+  color: var(--VeryDarkBlue);
+  text-decoration: none;
+}
+
+.mode {
+  cursor: pointer;
+}
+
+/* USER FORM */
+
+.search-input {
+  border-left: 0;
+}
+
+.search-input,
+.filter-select {
+  color: var(--DarkGray);
+}
+
+.search-icon {
+  background-color: white;
+  border-right: 0;
+}
+
+.darkInput {
+  background-color: var(--DarkBlue) !important;
+  border: black;
+}
+
+/* COUNTRIES */
+.country-name {
+  font-weight: 600;
+}
+
+.country-data span {
+  font-weight: 600;
+}
+
+.card {
+  border: black;
+}
+
+.darkCard {
+  background-color: var(--DarkBlue);
+}
+
+/* COUNTRY ITEM */
+
+.btn-back {
+  border: 1px solid rgb(212, 208, 208);
+}
+
+/* DARK MODE */
+
+.darkNavbar,
+.darkCard,
+.darkInput {
+  color: var(--White) !important;
+}
+
+/* FOR LARGER DEVICES */
+
+@media screen and (min-width: 576px) {
+  .container-fluid,
+  .navbar {
+    padding: 0 3em;
+  }
+
+  .country-form,
+  .countries,
+  .country-card,
+  .country-card-data {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* USERFORM */
+
+  .input-group {
+    width: 50% !important;
+  }
+
+  .filter-select {
+    width: 20% !important;
+  }
+
+  /* COUNTRIES LIST */
+  .countries {
+    flex-wrap: wrap;
+  }
+
+  .countries-card {
+    width: 20%;
+    min-width: 200px !important;
+    margin: 0 0.2em 3em !important;
+  }
+
+  /* COUNTRY ITEM */
+  .country-card {
+    flex-direction: row;
+    margin: 0 0 7em !important;
+  }
+
+  .card-img-item {
+    width: 50% !important;
+  }
+
+  .card-body-item {
+    width: 30%;
+    padding-left: 2em;
+  }
+}
