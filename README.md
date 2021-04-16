@@ -16,7 +16,7 @@ You will also see any lint errors in the console.
 
 ## Overview
 
-Users should be able to:
+Users would be able to:
 
 - See all countries from the API on the homepage
 - Search for a country using an `input` field
